@@ -1,7 +1,8 @@
-Trained model checkpoints are saved here.
+Place your training images here.
 
-After training, you will find:
-- bonsai_best.pt   → Best model checkpoint
-- history.json     → Training metrics history
+Folder structure expected:
+  data/train/juniper/image1.jpg
+  data/train/ficus/image1.jpg
+  ...
 
-These files are excluded from git (see .gitignore) due to large file size.
+Run `python scripts/prepare_dataset.py` to auto-split your raw images.
